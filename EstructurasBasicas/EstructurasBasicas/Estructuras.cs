@@ -50,7 +50,7 @@ namespace EstructurasBasicas
 
         //Declaración de métodos ó funciones
         //
-        // acceso tipoDelResultado nombre(tipo datoEntrada1, tipo datoEntrada2)
+        // acceso tipoDelResultado nombre(tipo datoEntrada1, tipo datoEntrada2, ...)
         //  {   ... 
         //      return variableResultado;
         //  }
