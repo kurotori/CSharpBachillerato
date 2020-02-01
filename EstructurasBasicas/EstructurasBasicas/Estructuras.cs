@@ -27,7 +27,29 @@ namespace EstructurasBasicas
         // Tipos:
         //Ver detalle en: https://drive.google.com/open?id=1O09NLZlfubztLA9R3Mg-KwyZRFz_D-YdHTSavUUjaXE
 
+        //Listas:
+        // acceso tipo[] nombreDeLista = new tipo[x];  -->'x' es un entero que indica
+        //                                                 la longitud de la lista
+        string[] nombres = new string[5];
+
+        //Método alternativo para declarar listas:
+        //
+        string[] apellidos; // 1 - Se declara la lista, pero NO se la inicializa
+
+        public void alternativo()
+        {                   //NOTA: La asignación de valores o características
+                            // de forma POSTERIOR a la declaración
+                            // DEBE realizarse dentro de una función.
+
+            apellidos = new string[5]; // 2 - Inicializo la lista mediante el
+                                       // operador 'new'
+        }
+
+
+
+
         //Declaración de métodos ó funciones
+        //
         // acceso tipoDelResultado nombre(tipo datoEntrada1, tipo datoEntrada2)
         //  {   ... 
         //      return variableResultado;
@@ -35,10 +57,11 @@ namespace EstructurasBasicas
         //
         // Si el tipo de la función/método es 'void', se trata de un método
         // que no devuelve un objeto resultado.
+        // Más información: https://drive.google.com/open?id=1RYrzYY_tVnKDAjKd5oCr_qfs8GOn-_zOUNrUlovGztc
 
         public void ejemplo(int algo)
         {
-            if(algo == 0)
+            if (algo == 0)
             {
                 //...
             }
