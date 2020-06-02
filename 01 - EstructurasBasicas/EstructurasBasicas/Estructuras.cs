@@ -9,7 +9,7 @@ namespace EstructurasBasicas
     class Estructuras
     {
         // Declaración de variables:
-        // acceso tipo nombre = valorInicial;
+        //      acceso tipo nombre = valorInicial;
 
         // Modificadores de Acceso: 
         // ver detalle en https://drive.google.com/open?id=1VOyTfXt8WOilM8cUi8BOABQXLPdOIAZ3dZxGCKHmnBA
@@ -17,7 +17,7 @@ namespace EstructurasBasicas
         public int variableI1 = 0;
         private int variableI2 = 0;
 
-        //Se pueden declarar variables sin indicar modificador de acceso
+        //Se pueden declarar variables SIN indicar modificador de acceso
         //Quedan con modificador 'internal'
         double variableF = 0.1;
         string variableS = "hola";
@@ -28,23 +28,27 @@ namespace EstructurasBasicas
         //Ver detalle en: https://drive.google.com/open?id=1O09NLZlfubztLA9R3Mg-KwyZRFz_D-YdHTSavUUjaXE
 
         //Listas:
-        // acceso tipo[] nombreDeLista = new tipo[x];  -->'x' es un entero que indica
+        // acceso tipo[] nombreDeLista = new tipo[x];  -->'x' es un número entero que indica
         //                                                 la longitud de la lista
         string[] nombres = new string[5];
 
+
         //Método alternativo para declarar listas:
+        // Lista con inicialización tardía
         //
-        string[] apellidos; // 1 - Se declara la lista, pero NO se la inicializa
+        // 1 - Se declara la lista, pero NO se la inicializa
+        string[] apellidos; 
 
-        public void alternativo()
-        {                   //NOTA: La asignación de valores o características
-                            // de forma POSTERIOR a la declaración
-                            // DEBE realizarse dentro de una función.
-
-            apellidos = new string[5]; // 2 - Inicializo la lista mediante el
-                                       // operador 'new'
+        //Se declara una función o un método donde pretendemos inicializar nuestra lista
+        public void Metodo()
+        {
+            // 2 - Inicializo la lista mediante el operador 'new'
+            apellidos = new string[5];
         }
 
+        //NOTA: La asignación tardía de valores o características
+        // o sea, de forma POSTERIOR a la declaración
+        // DEBE realizarse dentro de una función.
 
 
 
@@ -56,11 +60,14 @@ namespace EstructurasBasicas
         //  }
         //
         // Si el tipo de la función/método es 'void', se trata de un método
-        // que no devuelve un objeto resultado.
+        // que NO devuelve un objeto resultado.
         // Más información: https://drive.google.com/open?id=1RYrzYY_tVnKDAjKd5oCr_qfs8GOn-_zOUNrUlovGztc
 
-        public void ejemplo(int algo)
+        public void Ejemplo(int algo)
         {
+            /**
+             * 
+             */
             if (algo == 0)
             {
                 //...
