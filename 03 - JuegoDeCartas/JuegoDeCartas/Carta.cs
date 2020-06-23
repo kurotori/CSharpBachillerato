@@ -12,11 +12,11 @@ namespace JuegoDeCartas
             this.palo = palo;
         }
 
-        public int getNumero(){
+        public int GetNumero(){
             return numero;
         }
 
-        public string getPalo(){
+        public string GetPalo(){
             return palo;
         }
     }
