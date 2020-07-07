@@ -37,6 +37,7 @@
     <Compile Include="Carta.cs" />
     <Compile Include="Baraja.cs" />
     <Compile Include="Herramientas.cs" />
+    <Compile Include="Jugador.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
