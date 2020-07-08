@@ -12,6 +12,7 @@ namespace JuegoDeCartas
             baraja.Barajar();
             baraja.MostrarBaraja();
 
+            baraja.algo();
             Console.ReadKey();
         }
     }

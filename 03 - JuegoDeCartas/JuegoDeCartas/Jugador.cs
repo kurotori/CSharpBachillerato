@@ -20,6 +20,6 @@ namespace JuegoDeCartas
 
         }
 
-        public void 
+        //public void 
     }
 }
