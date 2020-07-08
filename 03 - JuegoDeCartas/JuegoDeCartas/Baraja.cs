@@ -9,19 +9,6 @@ namespace JuegoDeCartas
 
         public Carta[] baraja = new Carta[50];
 
-        public List<Carta> baraja2 = new List<Carta>();
-
-        public void algo()
-        {
-            Carta c1 = new Carta(2, "Oro");
-            baraja2.Add(c1); //añadir un elemento
-            baraja2.AddRange();
-            baraja2.Capacity = 50;
-            int longitud = baraja2.Capacity;
-            baraja2.Insert(34, c1);
-        }
-
-
         private string[] palos = { "Oro", "Espada", "Copa", "Basto" };
 
         /*
@@ -69,7 +56,7 @@ namespace JuegoDeCartas
             }
         }
 
-        public void Barajar()
+        public void Barajar_nuevo()
         {
             for (int c = 0; c < 50; c++)
             {
@@ -82,23 +69,22 @@ namespace JuegoDeCartas
                 baraja[numCarta2] = barajada;
             }
 
-
-
-
-
-            //for (int c = 0; c < 1500; c++)
-            //{
-            //  Carta barajada = null;
-
-            //                int numCarta1 = herramientas.AlAzarEntre(0, 49);
-            //              int numCarta2 = herramientas.AlAzarEntre(0, 49);
-
-            //            barajada = baraja[numCarta1];
-            //              baraja[numCarta1] = baraja[numCarta2];
-            //          baraja[numCarta2] = barajada;
-            //    }
-
         }
+
+
+        public void Barajar_viejo()
+        {
+            for (int c = 0; c < 1500; c++)
+            {
+                Carta barajada = null;
+                int numCarta1 = herramientas.AlAzarEntre(0, 49);
+                int numCarta2 = herramientas.AlAzarEntre(0, 49);
+                barajada = baraja[numCarta1];
+                baraja[numCarta1] = baraja[numCarta2];
+                baraja[numCarta2] = barajada;
+            }
+        }
+
 
     }
 }
