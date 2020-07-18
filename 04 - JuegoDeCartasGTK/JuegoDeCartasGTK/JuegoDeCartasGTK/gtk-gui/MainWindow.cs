@@ -5,15 +5,23 @@ public partial class MainWindow
 {
 	private global::Gtk.Table table1;
 
-	private global::Gtk.Button button1;
+	private global::Gtk.HBox hbox1;
 
-	private global::Gtk.Button button2;
+	private global::Gtk.Image image1;
 
-	private global::Gtk.Button button3;
+	private global::Gtk.Image image2;
 
-	private global::Gtk.Button button4;
+	private global::Gtk.Image image3;
 
-	private global::Gtk.Button button5;
+	private global::Gtk.Image image4;
+
+	private global::Gtk.Image image5;
+
+	private global::Gtk.Image image6;
+
+	private global::Gtk.Image image7;
+
+	private global::Gtk.Image image8;
 
 	protected virtual void Build()
 	{
@@ -30,67 +38,88 @@ public partial class MainWindow
 		this.table1.RowSpacing = ((uint)(6));
 		this.table1.ColumnSpacing = ((uint)(6));
 		// Container child table1.Gtk.Table+TableChild
-		this.button1 = new global::Gtk.Button();
-		this.button1.CanFocus = true;
-		this.button1.Name = "button1";
-		this.button1.UseUnderline = true;
-		this.button1.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.table1.Add(this.button1);
-		// Container child table1.Gtk.Table+TableChild
-		this.button2 = new global::Gtk.Button();
-		this.button2.CanFocus = true;
-		this.button2.Name = "button2";
-		this.button2.UseUnderline = true;
-		this.button2.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.table1.Add(this.button2);
-		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.button2]));
-		w2.LeftAttach = ((uint)(1));
-		w2.RightAttach = ((uint)(2));
-		w2.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child table1.Gtk.Table+TableChild
-		this.button3 = new global::Gtk.Button();
-		this.button3.CanFocus = true;
-		this.button3.Name = "button3";
-		this.button3.UseUnderline = true;
-		this.button3.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.table1.Add(this.button3);
-		global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1[this.button3]));
-		w3.LeftAttach = ((uint)(2));
-		w3.RightAttach = ((uint)(3));
-		w3.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child table1.Gtk.Table+TableChild
-		this.button4 = new global::Gtk.Button();
-		this.button4.CanFocus = true;
-		this.button4.Name = "button4";
-		this.button4.UseUnderline = true;
-		this.button4.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.table1.Add(this.button4);
-		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1[this.button4]));
-		w4.TopAttach = ((uint)(1));
-		w4.BottomAttach = ((uint)(2));
-		w4.LeftAttach = ((uint)(1));
-		w4.RightAttach = ((uint)(2));
-		w4.XOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child table1.Gtk.Table+TableChild
-		this.button5 = new global::Gtk.Button();
-		this.button5.CanFocus = true;
-		this.button5.Name = "button5";
-		this.button5.UseUnderline = true;
-		this.button5.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-		this.table1.Add(this.button5);
-		global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table1[this.button5]));
-		w5.TopAttach = ((uint)(2));
-		w5.BottomAttach = ((uint)(3));
-		w5.LeftAttach = ((uint)(1));
-		w5.RightAttach = ((uint)(2));
-		w5.XOptions = ((global::Gtk.AttachOptions)(4));
+		this.hbox1 = new global::Gtk.HBox();
+		this.hbox1.Name = "hbox1";
+		this.hbox1.Spacing = 6;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image1 = new global::Gtk.Image();
+		this.image1.Name = "image1";
+		this.hbox1.Add(this.image1);
+		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image1]));
+		w1.Position = 0;
+		w1.Expand = false;
+		w1.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image2 = new global::Gtk.Image();
+		this.image2.Name = "image2";
+		this.hbox1.Add(this.image2);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image2]));
+		w2.Position = 1;
+		w2.Expand = false;
+		w2.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image3 = new global::Gtk.Image();
+		this.image3.Name = "image3";
+		this.hbox1.Add(this.image3);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image3]));
+		w3.Position = 2;
+		w3.Expand = false;
+		w3.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image4 = new global::Gtk.Image();
+		this.image4.Name = "image4";
+		this.hbox1.Add(this.image4);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image4]));
+		w4.Position = 3;
+		w4.Expand = false;
+		w4.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image5 = new global::Gtk.Image();
+		this.image5.Name = "image5";
+		this.hbox1.Add(this.image5);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image5]));
+		w5.Position = 4;
+		w5.Expand = false;
+		w5.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image6 = new global::Gtk.Image();
+		this.image6.Name = "image6";
+		this.hbox1.Add(this.image6);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image6]));
+		w6.Position = 5;
+		w6.Expand = false;
+		w6.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image7 = new global::Gtk.Image();
+		this.image7.Name = "image7";
+		this.hbox1.Add(this.image7);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image7]));
+		w7.Position = 6;
+		w7.Expand = false;
+		w7.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.image8 = new global::Gtk.Image();
+		this.image8.Name = "image8";
+		this.hbox1.Add(this.image8);
+		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.image8]));
+		w8.Position = 7;
+		w8.Expand = false;
+		w8.Fill = false;
+		this.table1.Add(this.hbox1);
+		global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table1[this.hbox1]));
+		w9.TopAttach = ((uint)(2));
+		w9.BottomAttach = ((uint)(3));
+		w9.LeftAttach = ((uint)(1));
+		w9.RightAttach = ((uint)(2));
+		w9.XOptions = ((global::Gtk.AttachOptions)(4));
+		w9.YOptions = ((global::Gtk.AttachOptions)(4));
 		this.Add(this.table1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 600;
-		this.DefaultHeight = 400;
+		this.DefaultWidth = 761;
+		this.DefaultHeight = 524;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 	}

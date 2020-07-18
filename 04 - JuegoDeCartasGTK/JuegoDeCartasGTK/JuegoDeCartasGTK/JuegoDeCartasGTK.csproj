@@ -61,6 +61,57 @@
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="imagen\baraja\basto3.png" />
+    <EmbeddedResource Include="imagen\baraja\basto2.png" />
+    <EmbeddedResource Include="imagen\baraja\basto11.png" />
+    <EmbeddedResource Include="imagen\baraja\basto10.png" />
+    <EmbeddedResource Include="imagen\baraja\basto12.png" />
+    <EmbeddedResource Include="imagen\baraja\copa1.png" />
+    <EmbeddedResource Include="imagen\baraja\copa11.png" />
+    <EmbeddedResource Include="imagen\baraja\basto5.png" />
+    <EmbeddedResource Include="imagen\baraja\basto1.png" />
+    <EmbeddedResource Include="imagen\baraja\copa3.png" />
+    <EmbeddedResource Include="imagen\baraja\comodin.png" />
+    <EmbeddedResource Include="imagen\baraja\basto8.png" />
+    <EmbeddedResource Include="imagen\baraja\copa12.png" />
+    <EmbeddedResource Include="imagen\baraja\copa5.png" />
+    <EmbeddedResource Include="imagen\baraja\copa10.png" />
+    <EmbeddedResource Include="imagen\baraja\basto7.png" />
+    <EmbeddedResource Include="imagen\baraja\basto6.png" />
+    <EmbeddedResource Include="imagen\baraja\basto4.png" />
+    <EmbeddedResource Include="imagen\baraja\vacia.png" />
+    <EmbeddedResource Include="imagen\baraja\copa7.png" />
+    <EmbeddedResource Include="imagen\baraja\oro7.png" />
+    <EmbeddedResource Include="imagen\baraja\copa4.png" />
+    <EmbeddedResource Include="imagen\baraja\basto9.png" />
+    <EmbeddedResource Include="imagen\baraja\espada6.png" />
+    <EmbeddedResource Include="imagen\baraja\oro8.png" />
+    <EmbeddedResource Include="imagen\baraja\copa2.png" />
+    <EmbeddedResource Include="imagen\baraja\oro12.png" />
+    <EmbeddedResource Include="imagen\baraja\copa6.png" />
+    <EmbeddedResource Include="imagen\baraja\espada3.png" />
+    <EmbeddedResource Include="imagen\baraja\reves.png" />
+    <EmbeddedResource Include="imagen\baraja\copa9.png" />
+    <EmbeddedResource Include="imagen\baraja\oro10.png" />
+    <EmbeddedResource Include="imagen\baraja\oro4.png" />
+    <EmbeddedResource Include="imagen\baraja\oro5.png" />
+    <EmbeddedResource Include="imagen\baraja\espada5.png" />
+    <EmbeddedResource Include="imagen\baraja\espada9.png" />
+    <EmbeddedResource Include="imagen\baraja\copa8.png" />
+    <EmbeddedResource Include="imagen\baraja\espada11.png" />
+    <EmbeddedResource Include="imagen\baraja\oro3.png" />
+    <EmbeddedResource Include="imagen\baraja\oro11.png" />
+    <EmbeddedResource Include="imagen\baraja\espada2.png" />
+    <EmbeddedResource Include="imagen\baraja\espada10.png" />
+    <EmbeddedResource Include="imagen\baraja\espada4.png" />
+    <EmbeddedResource Include="imagen\baraja\espada7.png" />
+    <EmbeddedResource Include="imagen\baraja\oro6.png" />
+    <EmbeddedResource Include="imagen\baraja\oro2.png" />
+    <EmbeddedResource Include="imagen\baraja\oro9.png" />
+    <EmbeddedResource Include="imagen\baraja\espada12.png" />
+    <EmbeddedResource Include="imagen\baraja\espada1.png" />
+    <EmbeddedResource Include="imagen\baraja\espada8.png" />
+    <EmbeddedResource Include="imagen\baraja\oro1.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />

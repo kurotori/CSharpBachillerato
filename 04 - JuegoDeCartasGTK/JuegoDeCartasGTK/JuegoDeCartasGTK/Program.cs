@@ -12,5 +12,8 @@ namespace JuegoDeCartasGTK
             win.Show();
             Application.Run();
         }
+
+
+
     }
 }
