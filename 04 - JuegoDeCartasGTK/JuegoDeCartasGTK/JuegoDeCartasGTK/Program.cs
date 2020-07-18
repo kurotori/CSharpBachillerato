@@ -9,6 +9,8 @@ namespace JuegoDeCartasGTK
         {
             Application.Init();
             MainWindow win = new MainWindow();
+            //MainWindow win = new MainWindow();
+            //Prueba win = new Prueba();
             win.Show();
             Application.Run();
         }

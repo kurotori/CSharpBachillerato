@@ -119,6 +119,13 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Baraja\Carta.cs" />
+    <Compile Include="Baraja\Baraja.cs" />
+    <Compile Include="Prueba.cs" />
+    <Compile Include="gtk-gui\JuegoDeCartasGTK.Prueba.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Baraja\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
