@@ -8,6 +8,8 @@ namespace JuegoDeCartasGTK
 
 		private global::Gtk.Button button1;
 
+		private global::Gtk.EventBox eventbox1;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -29,6 +31,13 @@ namespace JuegoDeCartasGTK
 			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button1]));
 			w1.X = 264;
 			w1.Y = 96;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.eventbox1 = new global::Gtk.EventBox();
+			this.eventbox1.Name = "eventbox1";
+			this.fixed1.Add(this.eventbox1);
+			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.eventbox1]));
+			w2.X = 59;
+			w2.Y = 43;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{

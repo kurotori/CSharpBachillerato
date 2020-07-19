@@ -6,7 +6,7 @@ namespace JuegoDeCartasGTK.Baraja
 {
     public class Baraja
     {
-        //Herramientas herramientas = new Herramientas();
+        Herramientas herramientas = new Herramientas();
 
         //public Carta[] baraja = new Carta[50];
         public List<Carta> baraja = new List<Carta>();
@@ -33,19 +33,19 @@ namespace JuegoDeCartasGTK.Baraja
                         for (int num = 1; num < 13; num++)
                         {
                             nuevaCarta = new Carta(num, palo);
-                            //baraja[posicion] = nuevaCarta;
                             baraja.Add(nuevaCarta);
-                            //posicion++;
+                            posicion++;
                         }
                     }
                 }
                 else
                 {
-                    nuevaCarta = new Carta(0, "Comodín");
-                    //baraja[posicion] = nuevaCarta;
-                    //posicion++;
+                    break;
+                    nuevaCarta = new Carta(0, "comodin");
+                    baraja.Add(nuevaCarta);
+                    posicion++;
                 }
-                baraja.Add(nuevaCarta);
+
             }
 
         }
@@ -64,13 +64,13 @@ namespace JuegoDeCartasGTK.Baraja
             }
         }
 
-        /*public void Barajar_nuevo()
+        public void Barajar_nuevo()
         {
-            for (int c = 0; c < 50; c++)
+            for (int c = 0; c < baraja.Count; c++)
             {
                 Carta barajada = null;
 
-                int numCarta2 = herramientas.AlAzarEntre(0, 49);
+                int numCarta2 = herramientas.AlAzarEntre(0, baraja.Count);
 
                 barajada = baraja[c];
                 baraja[c] = baraja[numCarta2];
@@ -91,7 +91,7 @@ namespace JuegoDeCartasGTK.Baraja
                 baraja[numCarta1] = baraja[numCarta2];
                 baraja[numCarta2] = barajada;
             }
-        }*/
+        }
 
 
     }

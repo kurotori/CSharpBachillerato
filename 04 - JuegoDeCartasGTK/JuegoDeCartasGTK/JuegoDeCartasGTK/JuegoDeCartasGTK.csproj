@@ -71,7 +71,7 @@
     <EmbeddedResource Include="imagen\baraja\basto5.png" />
     <EmbeddedResource Include="imagen\baraja\basto1.png" />
     <EmbeddedResource Include="imagen\baraja\copa3.png" />
-    <EmbeddedResource Include="imagen\baraja\comodin.png" />
+    <EmbeddedResource Include="imagen\baraja\comodin0.png" />
     <EmbeddedResource Include="imagen\baraja\basto8.png" />
     <EmbeddedResource Include="imagen\baraja\copa12.png" />
     <EmbeddedResource Include="imagen\baraja\copa5.png" />
@@ -123,6 +123,9 @@
     <Compile Include="Baraja\Baraja.cs" />
     <Compile Include="Prueba.cs" />
     <Compile Include="gtk-gui\JuegoDeCartasGTK.Prueba.cs" />
+    <Compile Include="Herramientas.cs" />
+    <Compile Include="ImageCarta.cs" />
+    <Compile Include="ButtonCarta.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Baraja\" />

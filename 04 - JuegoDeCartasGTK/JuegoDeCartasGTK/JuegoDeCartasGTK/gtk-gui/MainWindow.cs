@@ -3,29 +3,32 @@
 
 public partial class MainWindow
 {
-	private global::Gtk.Table table1;
+	private global::Gtk.Table tblTablero1;
 
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
 		// Widget MainWindow
-		this.WidthRequest = 600;
-		this.HeightRequest = 400;
+		this.WidthRequest = 1100;
+		this.HeightRequest = 700;
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+		this.AllowShrink = true;
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.table1 = new global::Gtk.Table(((uint)(5)), ((uint)(12)), false);
-		this.table1.Name = "table1";
-		this.table1.RowSpacing = ((uint)(6));
-		this.table1.ColumnSpacing = ((uint)(6));
-		this.Add(this.table1);
+		this.tblTablero1 = new global::Gtk.Table(((uint)(5)), ((uint)(11)), true);
+		this.tblTablero1.WidthRequest = 850;
+		this.tblTablero1.HeightRequest = 550;
+		this.tblTablero1.Name = "tblTablero1";
+		this.tblTablero1.RowSpacing = ((uint)(6));
+		this.tblTablero1.ColumnSpacing = ((uint)(6));
+		this.Add(this.tblTablero1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 977;
-		this.DefaultHeight = 469;
+		this.DefaultWidth = 1134;
+		this.DefaultHeight = 700;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 	}
