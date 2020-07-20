@@ -63,13 +63,14 @@ public partial class MainWindow : Gtk.Window
                 Stream flujo = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.baraja.reves.png");
                 //4 - Creamos un flujo de datos para obtener la imagen del botón 
 
-                imagen.Pixbuf = new Gdk.Pixbuf(flujo, 80, 130);
+                imagen.Pixbuf = new Gdk.Pixbuf(flujo, 79, 130);
                 //5 - Establecemos el flujo en el objeto imagen declarado antes
 
                 flujo.Close();
                 //6 - Cerramos el flujo de datos
 
                 b.Image = imagen;
+
                 //7 - Añadimos la imagen al botón
 
                 b.Clicked += new EventHandler(CartaClick);
@@ -78,7 +79,7 @@ public partial class MainWindow : Gtk.Window
                 b.Show();
                 //9 - Marcamos el botón para mostrarse
 
-                tblTablero1.Attach(b, columna, columna + 1, fila, fila+1);
+                tblTablero1.Attach(b, columna+1, columna + 2, fila, fila+1);
                 //10 - Añadimos el botón a la posición actual en la tabla.
                 // Para más detalles sobre el método Attach ver:              
 
