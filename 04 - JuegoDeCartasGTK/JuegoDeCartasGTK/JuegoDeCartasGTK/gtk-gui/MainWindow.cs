@@ -5,6 +5,14 @@ public partial class MainWindow
 {
 	private global::Gtk.Table tblTablero1;
 
+	private global::Gtk.VBox vbox3;
+
+	private global::Gtk.Label lblTiempo;
+
+	private global::Gtk.Button btnNuevaPartida;
+
+	private global::Gtk.Label lblPuntaje;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -16,19 +24,55 @@ public partial class MainWindow
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		this.AllowShrink = true;
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.tblTablero1 = new global::Gtk.Table(((uint)(5)), ((uint)(11)), true);
+		this.tblTablero1 = new global::Gtk.Table(((uint)(5)), ((uint)(12)), true);
 		this.tblTablero1.WidthRequest = 850;
 		this.tblTablero1.HeightRequest = 550;
 		this.tblTablero1.Name = "tblTablero1";
 		this.tblTablero1.RowSpacing = ((uint)(6));
 		this.tblTablero1.ColumnSpacing = ((uint)(6));
+		// Container child tblTablero1.Gtk.Table+TableChild
+		this.vbox3 = new global::Gtk.VBox();
+		this.vbox3.Name = "vbox3";
+		this.vbox3.Spacing = 6;
+		// Container child vbox3.Gtk.Box+BoxChild
+		this.lblTiempo = new global::Gtk.Label();
+		this.lblTiempo.Name = "lblTiempo";
+		this.lblTiempo.LabelProp = global::Mono.Unix.Catalog.GetString("...");
+		this.vbox3.Add(this.lblTiempo);
+		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.lblTiempo]));
+		w1.Position = 0;
+		w1.Fill = false;
+		// Container child vbox3.Gtk.Box+BoxChild
+		this.btnNuevaPartida = new global::Gtk.Button();
+		this.btnNuevaPartida.CanFocus = true;
+		this.btnNuevaPartida.Name = "btnNuevaPartida";
+		this.btnNuevaPartida.UseUnderline = true;
+		this.btnNuevaPartida.Label = global::Mono.Unix.Catalog.GetString("Nueva Partida");
+		this.vbox3.Add(this.btnNuevaPartida);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.btnNuevaPartida]));
+		w2.Position = 1;
+		w2.Expand = false;
+		w2.Fill = false;
+		// Container child vbox3.Gtk.Box+BoxChild
+		this.lblPuntaje = new global::Gtk.Label();
+		this.lblPuntaje.Name = "lblPuntaje";
+		this.lblPuntaje.LabelProp = global::Mono.Unix.Catalog.GetString("...");
+		this.vbox3.Add(this.lblPuntaje);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.lblPuntaje]));
+		w3.Position = 2;
+		this.tblTablero1.Add(this.vbox3);
+		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.tblTablero1[this.vbox3]));
+		w4.TopAttach = ((uint)(4));
+		w4.BottomAttach = ((uint)(5));
+		w4.LeftAttach = ((uint)(6));
+		w4.RightAttach = ((uint)(8));
 		this.Add(this.tblTablero1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 1134;
-		this.DefaultHeight = 700;
+		this.DefaultWidth = 1369;
+		this.DefaultHeight = 761;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 	}

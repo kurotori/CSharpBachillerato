@@ -18,7 +18,7 @@ public partial class MainWindow : Gtk.Window
         Build();
         //ShowAll();
         PrepararVentana();
-        //Apariencia();
+        Apariencia();
     }
 
     private Baraja baraja = new Baraja();
@@ -36,6 +36,8 @@ public partial class MainWindow : Gtk.Window
         Console.WriteLine("Barajando...");
         baraja.Barajar_nuevo();
 
+
+
         //Stream flujo = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.baraja.basto1.png");
         int idCarta = 0;
         //Incializamos un int en 0 para indicar nuestra posición en la baraja
@@ -43,7 +45,7 @@ public partial class MainWindow : Gtk.Window
         for (uint fila = 0; fila < 4; fila++)
             //El primer FOR es para recorrer las filas del Gtk.Table
             // debe usarse un 'uint' en vez de 'int' debido a que el método Attach no
-            // acepta variable de tipo 'int'
+            // acepta una variable de tipo 'int'
         {
             for (uint columna = 0; columna < 11; columna++)
                 //El segundo FOR es para recorrer las columnas del Gtk.Table
@@ -58,10 +60,6 @@ public partial class MainWindow : Gtk.Window
                 //3 - Creamos el botón para la carta con la clase Button modificada y le
                 // asignamos la carta
 
-                //string datoImagen = baraja.baraja[carta].GetInfoImagen();
-                //imagen.SetCarta(baraja.baraja[carta]);
-
-                //Console.WriteLine(datoImagen);
                 Stream flujo = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.baraja.reves.png");
                 //4 - Creamos un flujo de datos para obtener la imagen del botón 
 
@@ -87,20 +85,39 @@ public partial class MainWindow : Gtk.Window
                 idCarta++;
                 //11 - Pasamos a la siguiente carta
             }
+
+            //Asignar cartas de Vidas
+            for (int columna = 0; columna < 4; columna++)
+            {
+
+            }
         }
     }
 
     protected void Apariencia()
     {
+        this.ModifyBg(Gtk.StateType.Normal, new Gdk.Color(40, 40, 40));
         /*Assembly ensamble = Assembly.GetExecutingAssembly();
         Stream flujo = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.baraja.basto1.png");
         image1.Pixbuf = new Gdk.Pixbuf(flujo,50,80);*/
     }
 
 
+    private void CrearBotonCartaEnTabla(Gtk.Table tabla, 
+                                        uint filaInicio,
+                                        uint filaFin,
+                                        uint columnaInicio,
+                                        uint columnaFin
+        )
+    {
+
+    }
+
+
+
     private void CartaClick(object obj, EventArgs args)
     {
-        Console.WriteLine("click " + obj.GetType());
+        Console.WriteLine("click " + obj.GetType()+"_"+obj.ToString());
         ButtonCarta b = (ButtonCarta)obj;
         Carta c = b.GetCarta();
         Image img = new Image();
