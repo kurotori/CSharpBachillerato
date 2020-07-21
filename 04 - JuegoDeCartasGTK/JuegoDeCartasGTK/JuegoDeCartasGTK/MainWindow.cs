@@ -98,6 +98,26 @@ public partial class MainWindow : Gtk.Window
     protected void Apariencia()
     {
         this.ModifyBg(Gtk.StateType.Normal, new Gdk.Color(40, 40, 40));
+        for (uint i = 0; i < 4; i++)
+        {
+            Image img = new Image();
+            Stream f = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.espaciador_gris.png");
+            img.Pixbuf=new Gdk.Pixbuf(f, 35, 130);
+            f.Close();
+            img.Show();
+            tblTablero1.Attach(img, 0, 1, i, i + 1);
+            //tblTablero1.Attach(img, 13, 14, i, i + 1);
+        }
+        for (uint i = 0; i < 4; i++)
+        {
+            Image img = new Image();
+            Stream f = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.espaciador_gris.png");
+            img.Pixbuf = new Gdk.Pixbuf(f, 35, 130);
+            f.Close();
+            img.Show();
+            //tblTablero1.Attach(img, 0, 1, i, i + 1);
+            tblTablero1.Attach(img, 13, 14, i, i + 1);
+        }
         /*Assembly ensamble = Assembly.GetExecutingAssembly();
         Stream flujo = ensamble.GetManifestResourceStream("JuegoDeCartasGTK.imagen.baraja.basto1.png");
         image1.Pixbuf = new Gdk.Pixbuf(flujo,50,80);*/
@@ -119,11 +139,16 @@ public partial class MainWindow : Gtk.Window
     private void CartaClick(object obj, EventArgs args)
     {
         Console.WriteLine("click " + obj.GetType()+"_"+obj.ToString());
+
         ButtonCarta b = (ButtonCarta)obj;
         Carta c = b.GetCarta();
+
+        TextIter posF = tv_anuncios.Buffer.StartIter;
+        tv_anuncios.Buffer.Insert(ref posF, c.GetNumero() + " de " + c.GetPalo()+"\n");
+
         Image img = new Image();
         Stream flujo = ensamble.GetManifestResourceStream(c.GetInfoImagen());
-        img.Pixbuf = new Gdk.Pixbuf(flujo, 80, 130);
+        img.Pixbuf = new Gdk.Pixbuf(flujo, 79, 130);
         flujo.Close();
         b.Image = img;
     }

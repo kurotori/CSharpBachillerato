@@ -5,6 +5,10 @@ public partial class MainWindow
 {
 	private global::Gtk.Table tblTablero1;
 
+	private global::Gtk.ScrolledWindow GtkScrolledWindow;
+
+	private global::Gtk.TextView tv_anuncios;
+
 	private global::Gtk.VBox vbox3;
 
 	private global::Gtk.Label lblTiempo;
@@ -24,10 +28,27 @@ public partial class MainWindow
 		this.DefaultWidth = 1100;
 		this.DefaultHeight = 700;
 		// Container child MainWindow.Gtk.Container+ContainerChild
-		this.tblTablero1 = new global::Gtk.Table(((uint)(5)), ((uint)(13)), true);
+		this.tblTablero1 = new global::Gtk.Table(((uint)(5)), ((uint)(13)), false);
 		this.tblTablero1.Name = "tblTablero1";
 		this.tblTablero1.RowSpacing = ((uint)(6));
 		this.tblTablero1.ColumnSpacing = ((uint)(6));
+		// Container child tblTablero1.Gtk.Table+TableChild
+		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
+		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+		this.GtkScrolledWindow.HscrollbarPolicy = ((global::Gtk.PolicyType)(2));
+		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
+		this.tv_anuncios = new global::Gtk.TextView();
+		this.tv_anuncios.CanFocus = true;
+		this.tv_anuncios.Name = "tv_anuncios";
+		this.GtkScrolledWindow.Add(this.tv_anuncios);
+		this.tblTablero1.Add(this.GtkScrolledWindow);
+		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.tblTablero1[this.GtkScrolledWindow]));
+		w2.TopAttach = ((uint)(4));
+		w2.BottomAttach = ((uint)(5));
+		w2.LeftAttach = ((uint)(3));
+		w2.RightAttach = ((uint)(6));
+		w2.YOptions = ((global::Gtk.AttachOptions)(4));
 		// Container child tblTablero1.Gtk.Table+TableChild
 		this.vbox3 = new global::Gtk.VBox();
 		this.vbox3.Name = "vbox3";
@@ -37,9 +58,9 @@ public partial class MainWindow
 		this.lblTiempo.Name = "lblTiempo";
 		this.lblTiempo.LabelProp = global::Mono.Unix.Catalog.GetString("...");
 		this.vbox3.Add(this.lblTiempo);
-		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.lblTiempo]));
-		w1.Position = 0;
-		w1.Fill = false;
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.lblTiempo]));
+		w3.Position = 0;
+		w3.Fill = false;
 		// Container child vbox3.Gtk.Box+BoxChild
 		this.btnNuevaPartida = new global::Gtk.Button();
 		this.btnNuevaPartida.CanFocus = true;
@@ -47,23 +68,23 @@ public partial class MainWindow
 		this.btnNuevaPartida.UseUnderline = true;
 		this.btnNuevaPartida.Label = global::Mono.Unix.Catalog.GetString("Nueva Partida");
 		this.vbox3.Add(this.btnNuevaPartida);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.btnNuevaPartida]));
-		w2.Position = 1;
-		w2.Expand = false;
-		w2.Fill = false;
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.btnNuevaPartida]));
+		w4.Position = 1;
+		w4.Expand = false;
+		w4.Fill = false;
 		// Container child vbox3.Gtk.Box+BoxChild
 		this.lblPuntaje = new global::Gtk.Label();
 		this.lblPuntaje.Name = "lblPuntaje";
 		this.lblPuntaje.LabelProp = global::Mono.Unix.Catalog.GetString("...");
 		this.vbox3.Add(this.lblPuntaje);
-		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.lblPuntaje]));
-		w3.Position = 2;
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.lblPuntaje]));
+		w5.Position = 2;
 		this.tblTablero1.Add(this.vbox3);
-		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.tblTablero1[this.vbox3]));
-		w4.TopAttach = ((uint)(4));
-		w4.BottomAttach = ((uint)(5));
-		w4.LeftAttach = ((uint)(7));
-		w4.RightAttach = ((uint)(9));
+		global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.tblTablero1[this.vbox3]));
+		w6.TopAttach = ((uint)(4));
+		w6.BottomAttach = ((uint)(5));
+		w6.LeftAttach = ((uint)(7));
+		w6.RightAttach = ((uint)(9));
 		this.Add(this.tblTablero1);
 		if ((this.Child != null))
 		{

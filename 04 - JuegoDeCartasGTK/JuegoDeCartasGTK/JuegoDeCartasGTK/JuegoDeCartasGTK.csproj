@@ -94,6 +94,8 @@
     <EmbeddedResource Include="imagen\baraja\espada1.png" />
     <EmbeddedResource Include="imagen\baraja\espada8.png" />
     <EmbeddedResource Include="imagen\baraja\oro1.png" />
+    <EmbeddedResource Include="imagen\espaciador_blanco.png" />
+    <EmbeddedResource Include="imagen\espaciador_gris.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
