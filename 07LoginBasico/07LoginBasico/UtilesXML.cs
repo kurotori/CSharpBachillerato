@@ -32,7 +32,7 @@ namespace _07LoginBasico
                 }
                 catch (Exception ex2)
                 {
-                    Console.WriteLine(ex1.Message);
+                    Console.WriteLine(ex2.Message);
                 }
 
                 escritor.Close();
@@ -41,8 +41,9 @@ namespace _07LoginBasico
         }
 
 
-        public void AgregarConfig(string rutaArchivo, string[] parConfigDato)//config, string dato)
+        public string AgregarConfig(string rutaArchivo, string[] parConfigDato)
         {
+            string resultado = "";
             XmlWriter escritor = null;
             try
             {
@@ -56,14 +57,20 @@ namespace _07LoginBasico
                 }
                 escritor.WriteEndElement();
                 escritor.Flush();
+                resultado = "Datos guardados con éxito";
             }
             catch (Exception ex)
             {
+                resultado = "Error: " + ex.Message;
                 Console.WriteLine(ex.Message);
             }
 
             escritor.Close();
+            return resultado;
         }
+
+
+
 
         public string LeerConfig(string rutaArchivo, string config)
         {
