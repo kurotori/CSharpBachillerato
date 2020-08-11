@@ -46,8 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Cartas\Baraja._cs" />
-    <None Include="Cartas\Carta._cs" />
     <Compile Include="Cartas\Baraja.cs" />
     <Compile Include="Cartas\Carta.cs" />
     <Compile Include="ButtonCarta.cs">
@@ -60,6 +58,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Herramientas.cs" />
+    <Compile Include="Juego.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -239,6 +238,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imagen\baraja\reves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="imagen\baraja\revesR.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imagen\baraja\vacia.png">

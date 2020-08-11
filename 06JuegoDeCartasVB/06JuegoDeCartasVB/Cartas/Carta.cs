@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace _06JuegoDeCartasVB.Cartas
 
 {
-    class Carta
+    public class Carta
     {
         private int numero = 0;
         private string palo = "";
@@ -32,5 +33,7 @@ namespace _06JuegoDeCartasVB.Cartas
         {
             return "imagen\\baraja\\" + palo + numero + ".png";
         }
+
+        
     }
 }

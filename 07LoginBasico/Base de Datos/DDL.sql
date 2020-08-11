@@ -1,9 +1,12 @@
+/* Eliminación y Reconstrucción de la Base de Datos */
 drop schema if exists loginBasico;
 create schema loginBasico;
 use loginBasico;
 
+
 drop user if exists "loginBasico"@"%";
 create user "loginBasico"@"%" identified by "59LaU)0AOek-ydyE[";
+
 
 grant 
 insert,select,update,delete,
