@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace _07LoginBasico
 {
+    /// <summary>
+    /// Contiene métodos para trabajar con archivos XML para guardar datos de configuración.
+    /// </summary>
     class UtilesXML
     {
         public void CrearXML(string rutaArchivo)
@@ -54,6 +57,7 @@ namespace _07LoginBasico
                     string config = par.Split(':')[0];
                     string dato = par.Split(':')[1];
                     escritor.WriteElementString(config, dato);
+                    
                 }
                 escritor.WriteEndElement();
                 escritor.Flush();
