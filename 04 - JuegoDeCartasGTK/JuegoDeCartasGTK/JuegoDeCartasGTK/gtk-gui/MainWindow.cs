@@ -24,7 +24,7 @@ public partial class MainWindow
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("MainWindow");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
-		this.AllowGrow = false;
+		//this.AllowGrow = false;
 		this.DefaultWidth = 1100;
 		this.DefaultHeight = 700;
 		// Container child MainWindow.Gtk.Container+ContainerChild
